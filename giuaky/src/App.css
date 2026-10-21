@@ -1,0 +1,59 @@
+* { box-sizing: border-box; }
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px 32px;
+  color: #222;
+}
+
+.navbar {
+  display: flex;
+  gap: 24px;
+  padding: 14px 0;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+.active { color: red; font-weight: bold; }
+
+.content h1 { margin-top: 0; }
+.status { font-size: 18px; }
+
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.book-table th,
+.book-table td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: left;
+}
+.book-table thead th { background: #f0f0f0; }
+
+.book-table tr.row-borrowed { background: #d9d9d9; }
+.book-table tbody tr:hover { background: #cfe8ff; }
+
+button {
+  padding: 6px 12px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+.btn-delete { color: #b00020; }
+
+.book-form { max-width: 420px; }
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+.form-row label { margin-bottom: 4px; font-weight: 600; }
+.form-row input,
+.form-row select { padding: 8px; font-size: 15px; }
+.error { color: #b00020; margin-top: 12px; }
+
+.detail p { margin: 8px 0; font-size: 17px; }

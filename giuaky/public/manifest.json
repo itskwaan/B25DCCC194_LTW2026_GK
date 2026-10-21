@@ -1,0 +1,8 @@
+{
+  "short_name": "Thư viện",
+  "name": "Quản lý Thư viện Sách",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
