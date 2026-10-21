@@ -15,6 +15,11 @@ const AddBook = ({ onAdd }) => {
 
     if (!title.trim() || !author.trim() || year === "") {
       setMessage("Vui lòng nhập đầy đủ thông tin");
+      const yearNumber = Number(year);
+      if (!Number.isInteger(yearNumber) || yearNumber < 1900 || yearNumber > 2026) {
+        setMessage("Năm xuất bản phải từ 1900 đến 2026");
+        return;
+      }
       return;
     }
 
